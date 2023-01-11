@@ -43,20 +43,18 @@ class Graph:
         return self.vertList.get(key)
         
     def getVertices(self):
-       for i in range(self.numVertices) :     
-        return (self.Node_List)[i].id
+       ids=[]
+       for i in range(self.numVertices) :    
+
+         ids.append(self.Node_List[i].id)
+       return ids
+
       
 A=Vertex("Karwar")
 B=Vertex("Udupi")
 C=Vertex("Mangalore")
 D=Vertex("Shimoga")
 E=Vertex("Chikmaglur")
-
-print(A.get_id())
-print(B.get_id())
-print(C.get_id())
-print(D.get_id())
-print(E.get_id())
 
 mainG = Graph()
 mainG.addVertex("Karwar")
